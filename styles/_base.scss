@@ -1,0 +1,94 @@
+/*
+colors: #efdcd8 , #ed7564 , #d8d8d8 , #696969 , #b8bb99 , #676a51
+fonts: bröd: ubuntu ; PT serif headlines
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'PT Serif', serif;
+    font-family: 'Ubuntu', sans-serif;
+    color: #d8d8d8;
+    width: 100%;
+}
+
+.nav-container {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #efdcd8;
+    border-bottom: 5px solid #252525;
+    height: 75px;
+    display: flex;
+    justify-content: end;
+}
+
+nav.menu {
+    text-align: right;
+}
+
+ul.navbar li {
+    display: inline;
+}
+
+nav a {
+    color: #252525;
+    cursor: pointer;
+}
+
+.introduction {
+    background-color: #676a51;
+    width: 100%;
+    display: flex;
+ 
+}
+
+.jenny-img {
+    width: 362px;
+    position: relative;
+    margin: 25px;
+
+}
+
+.jenny-text {
+    text-align: right;
+    width: 500px;
+    margin-right: 25px;
+}
+
+.about {
+    background-color: #676a51;
+
+}
+
+.school {
+    background-color: #d8d8d8;
+    color: #676a51;
+
+}
+
+.knowledge {
+    
+}
+
+.studies {
+}
+
+.experience {
+    background-color: #696969;
+    color: #efdcd8;
+}
+
+.contact {
+    background-color: #676a51;
+}
+
+footer {
+    background-color: #ed7564;
+}
