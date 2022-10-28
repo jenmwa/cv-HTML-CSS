@@ -61,13 +61,17 @@ body {
             font-weight: 400;
         }
 
-    .jenny-img {
+    /*>.jenny-img {
         border: 1px solid black;
+    }*/
+    p {
+        margin-bottom: 1rem;
     }
 
     .jenny-text {
         border: 1px solid black;
-        text-align: right;
+        text-align: left;
+        max-width: 50%;
     
     }
 
