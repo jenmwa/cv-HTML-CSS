@@ -17,116 +17,124 @@ body {
     color: #d8d8d8;
     width: 100%;
     padding: 1rem;
+    position: relative;
 }
 
-.nav-container {
-    border: 1px solid black;
-    background-color: whitesmoke;
-    position: sticky;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 75px;
-    display: flex;
-    justify-content: end;
-}
-
-    nav.menu {
-        text-align: right;
+    .nav-container {
         border: 1px solid black;
-
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        position: fixed;
+        z-index: 1;
     }
 
-        ul.navbar li {
-            border: 1px solid black;
-            display: inline;
+        .navbar {
+            margin-top: 20px;
         }
-
-        nav a {
-            color: #252525;
-            cursor: pointer;
-        }
-
-.introduction {
-    border: 1px solid black;
-    background-color: #676a51;
-    display: flex;
     
-}
-    h1 {
-        font-size: 5rem;
-        width: 50%;
-        letter-spacing: 2px;
-        position: relative;
-        display: block;
-        margin: 0 auto;
-        left: -7rem;
-        text-shadow: 0 0 5px black;        
-    }
 
-        .text-line {
-            display: inline;
-            box-shadow: inset 0 -0.5em 0 rgb(184 187 153); 
+        ul li{
+            display: inline-block;
+            padding:10px;
+            
         }
-
-        .serif {
-            font-family: 'PT Serif', serif;
-            font-weight: 400;
-            font-size: rem;
-        }
-
-    /*>.jenny-img {
-        border: 1px solid black;
-    }*/
-        p {
-            font-family: 'Raleway', sans-serif;
-            font-weight: 100;
-            margin: 1rem 0;
+            a {
+            font-size:20px;
+            font-family:'raleway', sans-serif;
+            color: #696969;
+            }
         
+        ul li a:hover{
+            color:#ed7564;
+            
         }
 
-    .jenny-text {
+    .introduction {
         border: 1px solid black;
-        max-width: 50%;
+        display: flex;
+        min-height: 100vh;
+        
+    }
+        h1 {
+            font-size: 10rem;
+            width: 50%;
+            letter-spacing: 2px;
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            left: -7rem;
+            text-shadow: 0 0 5px black;        
+        }
+
+            .text-line {
+                display: inline;
+                box-shadow: inset 0 -0.5em 0 rgb(103, 106, 81); 
+            }
+
+            .serif {
+                font-family: 'PT Serif', serif;
+                font-weight: 400;
+                font-size: 5rem;
+            }
+
+        /*>.jenny-img {
+            border: 1px solid black;
+        }*/
+            p {
+                font-family: 'Raleway', sans-serif;
+                font-weight: 100;
+                color: #676A51;
+                margin: 1rem 0;
+            
+            }
+
+        .jenny-text {
+            border: 1px solid black;
+            max-width: 50%;
+        }
+
+        .about {
+            border: 1px solid black;
+            background-color: #676a51;
+        }
+
+    .school {
+        border: 1px solid black;
+        color: #676a51;
+        display: flex;
+
     }
 
-    .about {
+    .knowledge {
         border: 1px solid black;
-        background-color: #676a51;
     }
 
-.school {
-    border: 1px solid black;
-    color: #676a51;
-    display: flex;
+    .studies {
+        
+    }
 
-}
+    .portfolio {
+        border: 1px solid black;
+        color:  #676a51;
+    }
 
-.knowledge {
-    border: 1px solid black;
-}
+    .experience {
+        border: 1px solid black;
+        color:  #676a51;
+    }
 
-.studies {
-    
-}
+    .contact {
+        border: 1px solid black;
+        border: 1px solid black;
+        background-color: #696969;
+    }
 
-.portfolio {
-    border: 1px solid black;
-    color:  #676a51;
-}
-
-.experience {
-    border: 1px solid black;
-    color:  #676a51;
-}
-
-.contact {
-    border: 1px solid black;
-    border: 1px solid black;
-    background-color: #696969;
-}
-
-footer {
-    border: 1px solid black;
-    background-color: #696969;
-}
+    footer {
+        border: 1px solid black;
+        background-color: #696969;
+    }
