@@ -31,47 +31,55 @@ body {
     justify-content: end;
 }
 
-nav.menu {
-    text-align: right;
-    border: 1px solid black;
+    nav.menu {
+        text-align: right;
+        border: 1px solid black;
 
-}
+    }
 
-ul.navbar li {
-    border: 1px solid black;
-    display: inline;
-}
+        ul.navbar li {
+            border: 1px solid black;
+            display: inline;
+        }
 
-nav a {
-    color: #252525;
-    cursor: pointer;
-}
+        nav a {
+            color: #252525;
+            cursor: pointer;
+        }
 
 .introduction {
     border: 1px solid black;
     background-color: #676a51;
     display: flex;
- 
 }
+    h1 {
+        font-size: 5rem;
+        max-width: 50%;;
+    }
+        span {
+            font-family: 'PT serif';
+            font-weight: 400;
+        }
 
-.jenny-img {
-    border: 1px solid black;
-}
+    .jenny-img {
+        border: 1px solid black;
+    }
 
-.jenny-text {
-    border: 1px solid black;
-    text-align: right;
-  
-}
+    .jenny-text {
+        border: 1px solid black;
+        text-align: right;
+    
+    }
 
-.about {
-    border: 1px solid black;
-    background-color: #676a51;
-}
+    .about {
+        border: 1px solid black;
+        background-color: #676a51;
+    }
 
 .school {
     border: 1px solid black;
     color: #676a51;
+    display: flex;
 
 }
 
@@ -80,6 +88,12 @@ nav a {
 }
 
 .studies {
+    
+}
+
+.portfolio {
+    border: 1px solid black;
+    color:  #676a51;
 }
 
 .experience {
