@@ -38,16 +38,7 @@
             <ul class="navbar">
                 <li><a href="#about">Om</a></li>
                 <li><a href="#knowledge">Kunskaper</a></li>
-                <!--<li><a href="#studies">Studier</a></li>-->
                 <li><a href="#contact">Kontakt</a></li>
-                <!--<div class="social">
-                    <li><a aria-label="Skicka Jenny ett mail" href="mailto:hej@jenwaller.se" target="_blank">
-                        <i aria-hidden="true" class="fa fa-envelope"></i></a></li> Funderar på om dessa behöver ett attribut typ title eller aria-label, för någon som inte ser så har dessa ikoner ingen text? Lite osäker på hur det läses upp/funkar med en skärmavläsare/screen reader.
-                    <li><a aria-label="Gå till Jennys LinkedIn-profil" href="https://www.linkedin.com/in/jenny-waller/" target="_blank">
-                        <i aria-hidden="true" class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a aria-label="Gå till Jennys Github-profil" href="https://github.com/jenmwa" target="blank">
-                        <i aria-hidden="true" class="fa-brands fa-github"></i></a></li>
-                </div>-->
             </ul>
         </nav>
     </header>
@@ -61,14 +52,13 @@
                     storytelling. Jag läser nu till Front End Utvecklare via Medieinstitutet!</p>
                 </div>
             <div class="jenny">
-             <!-- ta en ny, mindre Mäklar-look:ig bild-->
                 <img class="jenny-img" src="img/Jenny-waller_img2.png" width="240" height="375" alt="person med mörkt hår som ler mot kameran" title="jenny_waller">
                 <a href="#about" span class="arrow">&darr;</span></a>
             </div>
         </section>
 
         <section class="about" id="about">
-            <h3> <span class="text-line">OM MIG</span></h3>
+            <h3> <span class="text-line">Om mig</span></h3>
             <p>Värmlänning boende i Karlstad som gillar skogens lugn, det goda här i livet som mat & dryck och att få hemsidor att komma till liv med både design och funktionalitet.</p>
             <p>Att skapa hemsidor har funnits med mig sen slutet av 90-talet (Någon som kommer ihåg dreamweaver?), men det är först nu 20 år senare som jag slår slag i saker och utbildar mig till front end utvecklare via Medieinstitutet och satsar därmed en framtida karriär inom tech!</p>
             <p>Jag gillar struktur, ordning och reda, samtidigt som färg, form, design & bildhantering ligger mig varmt om hjärtat.</p>
@@ -79,7 +69,6 @@
 
         <section class="school" id="knowledge">
             <section class="knowledge">
-                <!-- bygga med div eller progress-bar? kolla upp!-->
                 <h3 class="text-line">Kunskaper</h3>
                 <div class="knowledge-container">
                     <p>HTML</p>
@@ -118,34 +107,35 @@
 
         <section class="portfolio" id="experience">
             <div class="portfolio-heading">
-                 <h3>Portfolio</h3>
+                 <h3 class="text-line">Portfolio</h3>
             </div> <!--4st mmobil, 8 tablet, 12 desktop-->
                 <div class="grid-container">
                     <div class="grid-item1">1</div>
                     <div class="grid-item2">2</div>
                     <div class="grid-item3">3</div>
                     <div class="grid-item4">4</div>
-                    <div class="grid-item5">5</div>
-                    <div class="grid-item6">6</div>
-                    <div class="grid-item7">7</div>
-                    <div class="grid-item8">8</div>
-                    <div class="grid-item9">9</div>
                 </div>
         </section>
 
         <section class="contact" id="contact">
-            <h3>CONNECTA</h3>
-            <p>Vill ni kontakta mig gör ni det lättast via <a href="mailto:hej@jennywaller.se" target="_blank">mail</a>
-                eller <a href="https://www.linkedin.com/in/jenny-waller/" target="_blank">LinkedIn</a>.</p>
-                <img src="img/jenny-waller_connect.png" width="220" height="275" alt="" title="">
+            <div class="contact-grid">
+                <h3 class="grid-title">Kontakt</h3>
+                <img class="grid-img" src="img/jenny-waller_connect.png" width="220" height="275" alt="" title="">
+                <div class="grid-icons">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa fa-envelope"></i>
+                </div>
+                <p class="grid-text">Vill du kontakta mig eller bara connecta och tjöta lite?<br><br> Du når mig bäst via <a href="mailto:hej@jennywaller.se" target="_blank">mail</a> eller <a href="https://www.linkedin.com/in/jenny-waller/" target="_blank">LinkedIn</a>.</p>
+                </div>
         </section>
-
     </main>
 
     <footer>
         <p>Copyright &copy;
-            <script>document.write(new Date().getFullYear())</script> <a href="mailto:jen@jenwaller.se"
-                target="blank">Jenny Waller</a> All rights reserved
+            <script>document.write(new Date().getFullYear())</script><a href="mailto:jen@jenwaller.se"
+                target="blank"> Jenny Waller</a></p>
+                <p>All rights reserved</p>
         </p>
         <a href="mailto:hej@jenwaller.se" target="_blank">
             <i class="fa fa-envelope"></i></a>

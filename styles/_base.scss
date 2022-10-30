@@ -134,6 +134,8 @@ body {
         flex-direction: column;
 
         h3 {
+            font-family: 'PT Serif', serif;
+
             text-align: right;
             margin:0 0 1rem 0;
             font-size: 3rem;
@@ -171,8 +173,10 @@ body {
         padding: 4rem 2rem 2rem 2rem;
         border: 10px dashed #ed7564;
         color: #696969;
+        margin: 2rem 0; 
 
         h3 {
+            font-family: 'PT Serif', serif;
             margin:0 0 1rem 0;
             font-size: 3rem;
             text-shadow: 0 1px 1px black;                   
@@ -245,74 +249,61 @@ body {
 
     .portfolio {
         border: 1px solid black;
-        color:  #676a51;
+        color:  #ed7564;
+        background-color: #b8bb99;
+        padding: 2rem 0;
+   
+
         
         h3 {
-            margin: 1rem;
-            
+            font-family: 'PT Serif', serif;
+            text-align: right;
+            margin:0 0 1rem 2rem;
+            font-size: 3rem;
+            text-shadow: 0 2px 5px black;                   
+            position: relative;
+            display: block;
         }
+        .text-line {
+            display: inline;
+            box-shadow: inset 0 -0.5em 0 rgb(216, 216, 216);
+            border-bottom: 5px groove black;
+        }
+
         .grid-container {
+            margin-top: 1rem;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3,1fr);
+            grid-template-columns: 1;
+            grid-template-rows: repeat(4,1fr);
             width: 100%;
-            height: 500px;
-            gap: 5px;
+            height: 800px;
+            gap: 1rem;
             color: red;
             text-align: center;
         }
             .grid-item1 {
-                border: 1px solid yellow;
-                background-image: url(../img/gitH.jpg);
+                background-image: url(../img/portfolio_gh.jpg);
                 background-size: contain;
+                background-position: center;
+                
             }
 
             .grid-item2 {
-                border: 1px solid yellow;
-                background-image: url(../img/gitH.jpg);
+                background-image: url(../img/portfolio_gh.jpg);
                 background-size: contain;
+                background-position: center;
             }
 
             .grid-item3 {
-                border: 1px solid yellow;
-                background-image: url(../img/gitH.jpg);
+                background-image: url(../img/portfolio_gh.jpg);
                 background-size: contain;
+                background-position: center;
             }
 
             .grid-item4 {
-                border: 1px solid yellow;
-                background-image: url(../img/gitH.jpg);
+                background-image: url(../img/portfolio_gh.jpg);
                 background-size: contain;
-            }
-
-            .grid-item5 {
-                border: 1px solid yellow;
-                background-image: url(../img/gitH.jpg);
-                background-size: contain;
-            }
-
-            .grid-item6 {
-                border: 1px solid yellow;
-                background-image: url(../img/gitH.jpg);
-                background-size: contain;
-            }
-
-            .grid-item7 {
-                border: 1px solid yellow;
-                background-image: url(../img/gitH.jpg);
-                background-size: contain;
-            }
-
-            .grid-item8 {
-                border: 1px solid yellow;
-                background-image: url(../img/gitH.jpg);
-                background-size: contain;
-            }
-
-            .grid-item9 {
-                border: 1px solid yellow;
-                background-image: url(../img/gitH.jpg);
-                background-size: contain;
+                background-position: center;
             }
     }
         
@@ -320,21 +311,74 @@ body {
     .contact {
         border: 1px solid black;
         background-color: #696969;
-        padding:1rem;
+        color: #efdcd8;
+        padding: 4rem 2rem 2rem 2rem;
+
+        a {
+            color: #d8d8d8;
+            font-weight: 600;
+        }
 
         p {
             border: 1px solid black;
-
         }
 
-        img {
+        h3 {
+            font-family: 'PT Serif', serif;
+            margin-bottom: 1rem;
+            font-size: 3rem;
+            text-shadow: 0 2px 5px black;                   
+            position: relative;
+            display: block;
+        }
+        
+        .grid-title {
+            display: inline;
+            box-shadow: inset 0 -0.5em 0 rgb(237, 117, 100); 
+            border-bottom: 5px groove black;
+        }
+
+        .grid-img {
+            position: relative;
             border: 1px solid black;
-            margin-right: 2rem;
+            margin-left: -1rem;
         }
+
+        .grid-icons {
+            border: 1px solid black;
+            display: grid;
+            justify-items: center;
+            grid-auto-columns: 0.5fr;
+            font-size: 4rem;
+            padding: 0 1rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-auto-flow: column;
+            justify-content: space-between;
+            gap: 5px;
+            grid-auto-columns: 0.5fr;
+            grid-template-columns: 30% 30% 30%;
+            grid-template-rows: 20% 80%;
+            grid-template-areas:
+            "grid-title grid-title grid-title"
+            "grid-img grid-icons grid-text";
+        }
+
+        .grid-title { grid-area: grid-title; }
+        .grid-img { grid-area: grid-img; }
+        .grid-icons { grid-area: grid-icons; }
+        .grid-text { grid-area: grid-text; }
+        
 
     }
 
     footer {
         border: 1px solid black;
         background-color: #696969;
+
+        a{
+            color:#b8bb99;
+        }
     }
