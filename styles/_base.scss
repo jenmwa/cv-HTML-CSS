@@ -17,7 +17,6 @@ body {
     color: #d8d8d8;
     width: 100%;
     padding: 1rem;
-    position: relative;
 
     a {
         font-family:'raleway', sans-serif;
@@ -40,25 +39,20 @@ body {
         padding: 0.5rem;
         position: fixed;
         z-index: 3;
-    }
 
         .navbar {
             margin-top: 20px;
         }
-    
 
         ul li{
             display: inline-block;
             padding:10px;
-            
         }
-            ul li a {
+
+        ul li a {
             font-size:20px;
             }
-        
-                ul li a:hover{
-                    
-                    }
+    }
 
     .introduction {
         border: 1px solid black;
@@ -79,7 +73,7 @@ body {
             .text-line {
                 display: inline;
                 box-shadow: inset 0 -0.5em 0 rgb(103, 106, 81);
-                border-bottom: 5px double black;
+                border-bottom: 5px groove black;
             }
 
             .serif {
@@ -127,71 +121,132 @@ body {
                             bottom: 2rem;
                         }
                 }
-
         }
-
     }
             
     .about {
-            padding: 4rem 2rem 2rem 2rem;
-            border: 1px solid black;
-            background-color: #676a51;
-            height: 100vh;
+        border: 1px solid black;
+        padding: 4rem 2rem 2rem 2rem;
+        border: 1px solid black;
+        background-color: #676a51;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
 
-            h3 {
-                text-align: right;
-                margin:0 0 1rem 0;
-                font-size: 3rem;
-                text-shadow: 0 2px 5px black;                   
-                position: relative;
-                display: block;
-            }
-            .text-line {
-                display: inline;
-                box-shadow: inset 0 -0.5em 0 rgb(239, 220, 216); 
-                border-bottom: 5px double black;
-
-            }
+        h3 {
+            text-align: right;
+            margin:0 0 1rem 0;
+            font-size: 3rem;
+            text-shadow: 0 2px 5px black;                   
+            position: relative;
+            display: block;
+        }
+        .text-line {
+            display: inline;
+            box-shadow: inset 0 -0.5em 0 rgb(237, 117, 100); 
+            border-bottom: 5px groove black;
+        }
             
-            p {
-                font-size: 1rem;
-                line-height: 1.5rem;
-                margin-bottom: 2rem;
-            }
-
-            a {
-                color: #efdcd8;
-                font-weight: 600;
-            }
-
-            h4 {
-                font-size: 2.5rem;
-                text-align: right;
-                bottom: 1rem;
-            }
+        p {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            margin-bottom: 2rem;
         }
 
+        a {
+            color: #efdcd8;
+            font-weight: 600;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            right: 2rem;
+            position: relative;
+            bottom: 4rem;
+        }
+    }
+
     .school {
-        border: 1px solid black;
-        color: #676a51;
-        display: flex;
+        padding: 4rem 2rem 2rem 2rem;
+        border: 10px dashed #ed7564;
+        color: #696969;
 
-    }
+        h3 {
+            margin:0 0 1rem 0;
+            font-size: 3rem;
+            text-shadow: 0 1px 1px black;                   
+            position: relative;
+            display: block;
+        }
 
-    .knowledge {
-        border: 1px solid black;
-    }
+        .text-line {
+            display: inline;
+            box-shadow: inset 0 -0.5em 0 rgb(239, 220, 216); 
+            border-bottom: 5px groove black;
+        }
 
-    .studies {
-        border: 1px solid black;
-        
+        .knowledge {
+            border: 1px solid black;
+        }
+    
+        .knowledge-container {
+            margin: 1rem 0;
+        }
+
+        .bar {
+            width: 100%;
+            background-color: #ddd;
+        }
+          
+        .skills {
+            text-align: right;
+            padding: 5px 5px 5px 0;
+            color: whitesmoke;
+            background-color: #676a51;
+            margin-bottom: 1rem;
+        }
+          
+        .html {
+            width: 75%;
+        }
+
+        .css {
+            width: 60%;
+        }
+
+        .js {
+            width: 30%;
+        }
+
+        .adobe {
+            width: 80%;
+        }
+
+        .figma {
+            width: 60%;
+        }
+    
+        .studies {
+            border: 1px solid black;
+            text-align: right;
+
+                ul {
+                    list-style-position: inside;
+                    list-style-type: square;
+                    margin: 1rem 0;
+
+                    li {
+                        margin-bottom: 1rem;
+                    }
+                }
+        }
     }
 
     .portfolio {
         border: 1px solid black;
         color:  #676a51;
         
-    }
         h3 {
             margin: 1rem;
             
@@ -259,11 +314,24 @@ body {
                 background-image: url(../img/gitH.jpg);
                 background-size: contain;
             }
+    }
+        
 
     .contact {
         border: 1px solid black;
-        border: 1px solid black;
         background-color: #696969;
+        padding:1rem;
+
+        p {
+            border: 1px solid black;
+
+        }
+
+        img {
+            border: 1px solid black;
+            margin-right: 2rem;
+        }
+
     }
 
     footer {
