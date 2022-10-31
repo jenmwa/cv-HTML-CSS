@@ -16,7 +16,7 @@ body {
     background-color: whitesmoke;
     color: #d8d8d8;
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
 
     h3 {
         font-family: 'PT Serif', serif;
@@ -51,13 +51,13 @@ body {
         background-color: whitesmoke;
         display: flex;
         justify-content: space-between;
-        padding: 0.5rem;
+        padding: 0.5rem 2rem;
         position: fixed;
         z-index: 3;
 
         ul li{
             display: inline-block;
-            padding:10px;
+            padding:0.5rem;
         }
 
         ul li a {
@@ -66,19 +66,18 @@ body {
     }
 
     .introduction {
-        padding: 2rem 2rem 0 2rem;
+        padding: 2em 2rem 0 2rem;
         border: 1px solid black;
-        height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         background-image: url("../img/header_background.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-
     
         h1 {
+            
+            left: 0;
             font-size: 8rem;
             letter-spacing: 2px;
             position: relative;
@@ -295,10 +294,7 @@ body {
 
             }
 
-                        /* Testing tablet */
-            @media (min-width: 768px) {
-                .grid-container { grid-template-columns: repeat(2, 1fr); }
-            }
+
             
             /* Testing computer */
             @media (min-width: 1366px) {
