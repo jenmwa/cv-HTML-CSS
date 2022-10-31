@@ -18,16 +18,27 @@ body {
     width: 100%;
     padding: 1rem;
 
+    h3 {
+        font-family: 'PT Serif', serif;
+        text-align: right;
+        margin:0 0 1rem 0;
+        font-size: 3rem;
+        text-shadow: 0 1px 1px black;                   
+        position: relative;
+        display: block;
+    }
+
     a {
-        font-family:'raleway', sans-serif;
+        font-family: 'PT Serif', serif;
         color: #696969;
         cursor: pointer;
-    }
-    a:hover {
-        color:#ed7564;
+
+        :hover {
+            color:#ed7564;
+            font-size: 2em;
+        }
     }
 }
-
     .nav-container {
         border: 1px solid black;
         width: 100%;
@@ -60,14 +71,19 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        background-image: url("../img/header_background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
     
         h1 {
-            font-size: 9rem;
+            font-size: 8rem;
             letter-spacing: 2px;
             position: relative;
             display: block;
             margin: 0 auto;
-            text-shadow: 0 2px 5px black;                   
+            text-shadow: 0 2px 10px black;                   
         }
 
             .text-line {
@@ -85,6 +101,7 @@ body {
         .jenny-text {
             border: 1px solid black;
             max-width: 50%;
+            position: relative;
 
             p {
                 font-family: 'Raleway', sans-serif;
@@ -97,17 +114,19 @@ body {
         .jenny {
             border: 1px solid black;
             display: flex;
-            flex-direction: row-reverse;
             justify-content: space-between;
             align-items: flex-end;
             position: relative;
-            bottom: 9rem;
 
                 img {
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
                     border: 1px solid black;
                 }
 
                 .arrow {
+                    font-family: 'Raleway', sans-serif;
                     text-decoration: none;
                     border: 1px solid black;
                     font-size: 10rem;
@@ -115,34 +134,22 @@ body {
                     left: 2rem;
                     z-index: 2;
                     bottom: 1.5rem;
-                    position: relative;
+                    text-shadow: 0 1px 1px black;                   
 
-                        :hover {
-                            bottom: 2rem;
-                        }
+
                 }
         }
     }
             
     .about {
+        position: relative;
         border: 1px solid black;
-        padding: 4rem 2rem 2rem 2rem;
+        padding: 0 2rem 2rem 2rem;
         border: 1px solid black;
         background-color: #676a51;
-        height: 100vh;
         display: flex;
         flex-direction: column;
 
-        h3 {
-            font-family: 'PT Serif', serif;
-
-            text-align: right;
-            margin:0 0 1rem 0;
-            font-size: 3rem;
-            text-shadow: 0 2px 5px black;                   
-            position: relative;
-            display: block;
-        }
         .text-line {
             display: inline;
             box-shadow: inset 0 -0.5em 0 rgb(237, 117, 100); 
@@ -174,15 +181,6 @@ body {
         border: 10px dashed #ed7564;
         color: #696969;
         margin: 2rem 0; 
-
-        h3 {
-            font-family: 'PT Serif', serif;
-            margin:0 0 1rem 0;
-            font-size: 3rem;
-            text-shadow: 0 1px 1px black;                   
-            position: relative;
-            display: block;
-        }
 
         .text-line {
             display: inline;
@@ -253,16 +251,6 @@ body {
         background-color: #b8bb99;
         padding: 2rem 1rem;
 
-        
-        h3 {
-            font-family: 'PT Serif', serif;
-            text-align: right;
-            margin:0 0 2rem 1rem;
-            font-size: 3rem;
-            text-shadow: 0 2px 5px black;                   
-            position: relative;
-            display: block;
-        }
         .text-line {
             display: inline;
             box-shadow: inset 0 -0.5em 0 rgb(216, 216, 216);
@@ -320,7 +308,7 @@ body {
     .contact {
         border: 1px solid black;
         background-color: #696969;
-        color: #efdcd8;
+        color: #efdcd8;        
 
         a {
             color: #d8d8d8;
@@ -341,12 +329,15 @@ body {
         }
 
         .grid-title {
-            grid-area: grid-title; 
-            font-family: 'PT Serif', serif;
-            font-size: 3rem;
-            text-shadow: 0 2px 5px black;                   
-            padding: 0 0 0 2rem;
+            grid-area: grid-title;               
+            text-align: left;
+            padding: 2rem 1rem;
+        }
 
+        .text-line {
+            display: inline;
+            box-shadow: inset 0 -0.5em 0 rgb(103, 106, 81);
+            border-bottom: 5px groove black;
         }
 
         .grid-img {
@@ -370,7 +361,13 @@ body {
             font-size: 4rem;
             text-align: center;
             margin-left: -3rem;
-            
+            text-shadow: 0 1px 1px black;                   
+
+
+                :hover {
+                    font-size: 4.2rem;
+                   color:rgb(237, 117, 100)
+                   }
         }
 
     }
