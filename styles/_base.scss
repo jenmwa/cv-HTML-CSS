@@ -312,65 +312,57 @@ body {
         border: 1px solid black;
         background-color: #696969;
         color: #efdcd8;
-        padding: 4rem 2rem 2rem 2rem;
 
         a {
             color: #d8d8d8;
             font-weight: 600;
         }
 
-        p {
-            border: 1px solid black;
-        }
-
-        h3 {
-            font-family: 'PT Serif', serif;
-            margin-bottom: 1rem;
-            font-size: 3rem;
-            text-shadow: 0 2px 5px black;                   
-            position: relative;
-            display: block;
-        }
-        
-        .grid-title {
-            display: inline;
-            box-shadow: inset 0 -0.5em 0 rgb(237, 117, 100); 
-            border-bottom: 5px groove black;
-        }
-
-        .grid-img {
-            position: relative;
-            border: 1px solid black;
-            margin-left: -1rem;
-        }
-
-        .grid-icons {
-            border: 1px solid black;
-            display: grid;
-            justify-items: center;
-            grid-auto-columns: 0.5fr;
-            font-size: 4rem;
-            padding: 0 1rem;
-        }
-
         .contact-grid {
             display: grid;
             grid-auto-flow: column;
-            justify-content: space-between;
-            gap: 5px;
-            grid-auto-columns: 0.5fr;
-            grid-template-columns: 30% 30% 30%;
-            grid-template-rows: 20% 80%;
+            grid-auto-columns: 1fr; 
+            grid-auto-rows: 1fr; 
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 0.5fr 0.75fr 1.25fr; 
             grid-template-areas:
-            "grid-title grid-title grid-title"
-            "grid-img grid-icons grid-text";
+            "grid-title grid-title"
+            "grid-img grid-text"
+            "grid-img grid-icons";
         }
 
-        .grid-title { grid-area: grid-title; }
-        .grid-img { grid-area: grid-img; }
-        .grid-icons { grid-area: grid-icons; }
-        .grid-text { grid-area: grid-text; }
-        
+        .grid-title {
+            grid-area: grid-title; 
+            font-family: 'PT Serif', serif;
+            font-size: 3rem;
+            text-shadow: 0 2px 5px black;                   
+            padding: 0 0 0 2rem;
+
+        }
+
+        .grid-img {
+            grid-area: grid-img;
+            border: 1px solid black;
+          
+        }
+
+        .grid-text {
+            grid-area: grid-text;
+            border: 1px solid black;
+            margin-left: -3rem;
+            padding-right: 2rem;
+        }
+
+        .grid-icons {
+            grid-area: grid-icons;
+            border: 1px solid black;
+            display: grid;
+            justify-items: center;
+            font-size: 4rem;
+            text-align: center;
+            margin-left: -3rem;
+            
+        }
 
     }
 
