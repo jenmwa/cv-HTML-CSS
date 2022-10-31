@@ -6,6 +6,8 @@ body {
     p {
         font-size: 1.25rem;
         padding-top: 1rem;
+        padding-left: 1rem;
+
     }
 }
 
@@ -41,10 +43,16 @@ body {
 
 .school {
     background-image: url(../img/header_background.jpg);
+
     p {
     font-size: 1.25rem;
     padding-top: 1rem;
     }
+
+    .knowledge, .studies {
+        padding: 0 1rem;
+    }
+
 }
 
 .portfolio {
