@@ -3,6 +3,14 @@ colors:  whitesmoke #efdcd8 , #ed7564 , #d8d8d8 , #696969 , #b8bb99 , #636458
 fonts: bröd: ubuntu ; PT serif headlines
 */
 
+$font-primary: 'Raleway', sans-serif;
+$font-secondary: 'PT Serif', serif;
+$primary-color-dark: #696969;
+$secondary-color-dark: #636458;
+$primary-color-light: #f5f5f5;
+$secondary-color-light: #d8d8d8;
+$primary-color-accent: #ed7564;
+
 * {
     padding: 0;
     margin: 0;
@@ -11,15 +19,14 @@ fonts: bröd: ubuntu ; PT serif headlines
 
 
 body {
-    font-family: 'PT Serif', serif;
-    font-family: 'Raleway', sans-serif;
-    background-color: whitesmoke;
-    color: #d8d8d8;
+    background-color: $primary-color-light;
+    color: $secondary-color-dark;
     width: 100%;
     padding: 1rem;
+    font-family: $font-primary;
 
     h2 {
-        font-family: 'PT Serif', serif;
+        font-family: $font-secondary;
         text-align: right;
         margin:0 0 1rem 0;
         font-size: 3.5rem;
@@ -28,8 +35,15 @@ body {
         display: block;
     }
 
+    .text-line {
+        display: inline;
+        box-shadow: inset 0 -0.5em 0 rgb(216, 216, 216);
+        border-bottom: 5px groove black;
+    }
+
     h3 {
-        font-family: 'PT Serif', serif;
+        font-family: $font-secondary;
+        color: $primary-color-dark;
         text-align: right;
         margin:0 0 1rem 0;
         font-size: 3rem;
@@ -39,12 +53,12 @@ body {
     }
 
     a {
-        font-family: 'PT Serif', serif;
-        color: #636458;
+        font-family: $font-secondary;
+        color: $secondary-color-dark;
         cursor: pointer;
 
         :hover {
-            color:#ed7564;
+            color: $primary-color-accent;
             font-size: 2em;
         }
     }
@@ -58,8 +72,8 @@ body {
         width: 100%;
         left: 0;
         top: 0;
-        background-color: whitesmoke;
-        color: #636458;
+        background-color: $primary-color-light;
+        color: $secondary-color-dark;
         display: flex;
         justify-content: space-between;
         padding: 0.5rem 2rem;
@@ -72,7 +86,7 @@ body {
         }
 
         ul li a {
-            font-size:20px;
+            font-size:1rem;
             }
     }
 
@@ -85,24 +99,24 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        position: relative;
+
     
         h1 {
-            
-            left: 0;
-            font-size: 8rem;
+            font-size: 7rem;
             letter-spacing: 2px;
-            position: relative;
             display: block;
-            margin: 0 auto;
+            margin: 0 0;
             text-shadow: 0 2px 2px black;
             color: #454545;
+            max-width: 80%;
         }
 
             .text-line {
                 display: inline;
                 /*box-shadow: inset 0 -0.55em 0 rgb(99, 100, 88); /*kontrast?*/
                 box-shadow: inset 0 -0.55em 0 rgb(184, 187, 153);
-                border-bottom: 5px groove black;
+                border-bottom: 5px groove #454545;
             }
 
             .serif {
@@ -116,7 +130,7 @@ body {
             position: relative;
 
             p {
-                font-family: 'Raleway', sans-serif;
+         
                 color: #454545;
                 margin: 1rem 0;
             }
@@ -140,11 +154,11 @@ body {
                     font-family: 'Raleway', sans-serif;
                     text-decoration: none;
                     border: 1px solid black;
-                    font-size: 10rem;
+                    font-size: 9rem;
                     font-weight: 900;
                     z-index: 2;
                     bottom: 1.5rem;
-                    text-shadow: 0 1px 1px black;                   
+                    text-shadow: 0 1px 1px white;                   
 
                 }
         }
@@ -153,19 +167,20 @@ body {
     .about {
         position: relative;
         border: 1px solid black;
-        padding: 2rem 2rem 2rem 2rem;
+        padding: 3rem 2rem 2rem 2rem;
         border: 1px solid black;
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.15),
         rgba(0, 0, 0, 0.15));
-        background-color: #636458;
+        background-color: $secondary-color-dark;
         display: flex;
         flex-direction: column;
+        color: $primary-color-light;
 
-        /*.text-line {
+        .text-line {
             display: inline;
-            box-shadow: inset 0 -0.5em 0 rgb(237, 117, 100); 
+            box-shadow: inset 0 -0.5em 0 rgb(103, 106, 81);
             border-bottom: 5px groove black;
-        }*/
+        }
             
         p {
             font-size: 1rem;
@@ -181,7 +196,6 @@ body {
             display: block;
             margin-left: auto;
             right: 2rem;
-            position: relative;
             bottom: 4rem;
         }
     }
@@ -189,17 +203,14 @@ body {
     .school {
         padding: 2rem 1.5rem 2rem 1.5rem;
         border: 10px dashed #ed7564;
-        color: #636458;
+        color: $secondary-color-dark;
         margin: 2rem 0; 
+       
 
         .text-line {
             display: inline;
             box-shadow: inset 0 -0.5em 0 rgb(216, 216, 216);
             border-bottom: 5px groove black;
-        }
-
-        .knowledge {
-            border: 1px solid black;
         }
     
         .knowledge-container {
@@ -208,7 +219,7 @@ body {
 
         .bar {
             width: 100%;
-            background-color: #ddd;
+            background-color: $secondary-color-light;
             outline: 1px solid black;
             margin-top: 0.5rem;;
 
@@ -217,9 +228,10 @@ body {
         .skills {
             text-align: right;
             padding: 5px 5px 5px 0;
-            color: whitesmoke;
-            background-color: #636458;
+            color: $primary-color-light;
+            background-color: $secondary-color-dark;
             margin-bottom: 1rem;
+            text-transform: uppercase;
         }
           
         .html {
@@ -243,7 +255,6 @@ body {
         }
     
         .studies {
-            border: 1px solid black;
             text-align: right;
 
                 ul {
@@ -260,24 +271,14 @@ body {
 
     .portfolio {
         border: 1px solid black;
-        background-color: #b8bb99;
-        padding: 2rem 2rem;
-        margin: 2rem 0; 
+        background-color: $secondary-color-light;
+        padding: 4rem 2rem;
 
-            h3 {
-                color: #636458;
+            .text-line {
+                display: inline;
+                box-shadow: inset 0 -0.55em 0 rgb(184, 187, 153);
+                border-bottom: 5px groove black;
             }
-
-            p {
-                color: #d8d8d8;
-            }
-
-
-        .text-line {
-            display: inline;
-            box-shadow: inset 0 -0.5em 0 rgb(216, 216, 216);
-            border-bottom: 5px groove black;
-        }
 
         .grid-container {
 
@@ -324,11 +325,16 @@ body {
 
     .contact {
         border: 1px solid black;
-        background-color: #696969;
-        color: whitesmoke;        
+        background-color: $primary-color-dark;
+        color: $primary-color-light;    
+        padding-top: 3rem; 
+        
+        h3 {
+            color: $primary-color-light;
+        }
 
         a {
-            color: whitesmoke;
+            color: $primary-color-light;
         }
 
         .contact-grid {
@@ -347,7 +353,7 @@ body {
         .grid-title {
             grid-area: grid-title;               
             text-align: left;
-            padding: 2rem 2rem;
+            padding: 0 2rem;
         }
 
         .text-line {
@@ -389,11 +395,11 @@ body {
 
     footer {
         border: 1px solid black;
-        background-color: #636458;
+        background-color:$secondary-color-dark;
         padding: 1rem;
-        color: whitesmoke;
+        color: $primary-color-light;
 
         a{
-            color:whitesmoke;
+            color:$primary-color-light;
         }
     }
