@@ -1,15 +1,18 @@
 body {
-    background-image: url("../img/background_desktop.jpg");
+    background-image: url("../img/background_tablet.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: auto;
-    max-width: 50vw;
+    max-width: 75vw;
 }
 
-.school {
+.introduction {
+
     background-image: none;
-    background-color: #efdcd87a;
+}
+.school {
+
     display: flex;
     justify-content: space-between;
 }

@@ -30,15 +30,8 @@ body {
         text-align: right;
         margin:0 0 1rem 0;
         font-size: 3.5rem;
-        text-shadow: 0 1px 1px black;                   
         position: relative;
         display: block;
-    }
-
-    .text-line {
-        display: inline;
-        box-shadow: inset 0 -0.5em 0 rgb(216, 216, 216);
-        border-bottom: 5px groove black;
     }
 
     h3 {
@@ -56,29 +49,28 @@ body {
         font-family: $font-secondary;
         color: $secondary-color-dark;
         cursor: pointer;
-
-        :hover {
-            color: $primary-color-accent;
-            font-size: 2em;
-        }
+        text-decoration: none;
     }
-    /*.text-line {
-        display: inline;
-        box-shadow: inset 0 -0.5em 0 rgb(99, 100, 88, 0.25); /*636458
-        }*/
+
+    a:hover {
+        color: $primary-color-accent;
+        transition: all .1s ease-in-out;
+
+    }
+     
 }
     .nav-container {
-        border: 1px solid black;
         width: 100%;
         left: 0;
         top: 0;
         background-color: $primary-color-light;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5); 
         color: $secondary-color-dark;
         display: flex;
         justify-content: space-between;
         padding: 0.5rem 2rem;
         position: fixed;
-        z-index: 3;
+        z-index: 4;
 
         ul li{
             display: inline-block;
@@ -86,13 +78,17 @@ body {
         }
 
         ul li a {
+            font-family: $font-primary;
+
             font-size:1rem;
+            border-bottom: 4px solid $secondary-color-dark;
+            text-decoration: none;
+            
             }
     }
 
     .introduction {
         padding: 2em 0 0 1rem;
-        border: 1px solid black;
         display: flex;
         flex-direction: column;
         background-image: url("../img/background_base.jpg");
@@ -107,68 +103,82 @@ body {
             letter-spacing: 2px;
             display: block;
             margin: 0 0;
-            text-shadow: 0 2px 2px black;
+            text-shadow: 0 1px 1px black;
             color: #454545;
             max-width: 80%;
         }
 
             .text-line {
                 display: inline;
-                /*box-shadow: inset 0 -0.55em 0 rgb(99, 100, 88); /*kontrast?*/
                 box-shadow: inset 0 -0.55em 0 rgb(184, 187, 153);
                 border-bottom: 5px groove #454545;
             }
 
             .serif {
-                font-family: 'PT Serif', serif;
+                font-family: $font-secondary;
                 font-size: 5rem;
             }
 
         .jenny-text {
-            border: 1px solid black;
             max-width: 45%;
             position: relative;
 
             p {
-         
                 color: #454545;
                 margin: 1rem 0;
             }
         }
 
         .jenny {
-            border: 1px solid black;
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
             position: relative;
 
                 img {
+                    right: -1rem;
                     position: absolute;
-                    right: 0;
-                    bottom: 0;
-                    border: 1px solid black;
                 }
+
+                /*.jenny-btn {
+                    background-color: $primary-color-light;
+                    color: $secondary-color-light;
+                    font-family: $font-primary;
+                    font-weight: 900;
+                    text-shadow: 0 1px 1px black;                   
+
+                    padding: 1rem 2rem;
+                    margin: 1rem 0 1rem -1rem;
+                    border-radius: 5px;
+                    z-index: 3;
+                    border: 3px solid rgba(245, 245, 245, 0.8);
+                    box-shadow: 3px 3px 3px black;                   
+                    text-transform: uppercase;
+                    opacity: 1;
+                    transition: 0.3s;
+                }
+                .jenny-btn:hover {
+                    background-color: $secondary-color-dark;
+                }*/
 
                 .arrow {
                     font-family: 'Raleway', sans-serif;
                     text-decoration: none;
-                    border: 1px solid black;
                     font-size: 9rem;
                     font-weight: 900;
                     z-index: 2;
                     bottom: 1.5rem;
-                    text-shadow: 0 1px 1px white;                   
-
+                    text-shadow: 0 1px 1px white;
+                    transition: all .1s ease-in-out; 
                 }
+                
+                
         }
     }
             
     .about {
         position: relative;
-        border: 1px solid black;
         padding: 3rem 2rem 2rem 2rem;
-        border: 1px solid black;
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.15),
         rgba(0, 0, 0, 0.15));
         background-color: $secondary-color-dark;
@@ -221,7 +231,7 @@ body {
             width: 100%;
             background-color: $secondary-color-light;
             outline: 1px solid black;
-            margin-top: 0.5rem;;
+            margin-top: 0.5rem;
 
         }
           
@@ -230,7 +240,7 @@ body {
             padding: 5px 5px 5px 0;
             color: $primary-color-light;
             background-color: $secondary-color-dark;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
             text-transform: uppercase;
         }
           
@@ -255,28 +265,28 @@ body {
         }
     
         .studies {
+            
             text-align: right;
 
                 ul {
                     list-style-position: inside;
                     list-style-type: square;
-                    margin: 1rem 0;
+                    margin: 2rem 0;
 
                     li {
-                        margin-bottom: 1rem;
+                        padding: 1rem 0;
                     }
                 }
         }
     }
 
     .portfolio {
-        border: 1px solid black;
-        background-color: $secondary-color-light;
+        background-color: rgba(245, 245, 245, 0.5);
         padding: 4rem 2rem;
 
             .text-line {
                 display: inline;
-                box-shadow: inset 0 -0.55em 0 rgb(184, 187, 153);
+                box-shadow: inset 0 -0.55em 0 $secondary-color-light;
                 border-bottom: 5px groove black;
             }
 
@@ -324,13 +334,13 @@ body {
         
 
     .contact {
-        border: 1px solid black;
         background-color: $primary-color-dark;
         color: $primary-color-light;    
         padding-top: 3rem; 
         
         h3 {
             color: $primary-color-light;
+
         }
 
         a {
@@ -343,7 +353,7 @@ body {
             grid-auto-columns: 1fr; 
             grid-auto-rows: 1fr; 
             grid-template-columns: 1fr 1fr; 
-            grid-template-rows: 0.5fr 0.75fr 1.25fr; 
+            grid-template-rows: 0.5fr 0.5fr 2fr; 
             grid-template-areas:
             "grid-title grid-title"
             "grid-img grid-text"
@@ -352,7 +362,7 @@ body {
 
         .grid-title {
             grid-area: grid-title;               
-            text-align: left;
+            text-align: right;
             padding: 0 2rem;
         }
 
@@ -364,39 +374,45 @@ body {
 
         .grid-img {
             grid-area: grid-img;
-            border: 1px solid black;
-          
         }
 
         .grid-text {
-            grid-area: grid-text;
-            border: 1px solid black;
-            margin-left: -3rem;
-            padding-right: 2rem;
-        }
+            text-align: center;
+            margin-right: 2rem;                 
 
+        }
         .grid-icons {
             grid-area: grid-icons;
-            border: 1px solid black;
             display: grid;
             justify-items: center;
-            font-size: 4rem;
+            padding: 3rem 0 5rem 0;
+            font-size: 3.5rem;
             text-align: center;
-            margin-left: -3rem;
-            text-shadow: 0 1px 1px black;                   
+            text-shadow: 0 1px 1px black;  
+            margin-right: 2rem; 
+            padding: 1rem 0;
 
-                :hover {
-                    font-size: 4.2rem;
+                .grid-icons:hover {
+                    font-size: 3.2rem;
                     color:rgb(237, 117, 100)
                    }
+
+                p {
+                    font-size: 1rem;
+                    margin-top: -2.5rem;
+               
+                    :hover {
+                        font-size: 1rem;
+                    }
+                }
         }
 
     }
 
     footer {
-        border: 1px solid black;
+        box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.5); 
         background-color:$secondary-color-dark;
-        padding: 1rem;
+        padding: 1rem 2rem;
         color: $primary-color-light;
 
         a{

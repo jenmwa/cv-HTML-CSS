@@ -31,13 +31,13 @@
 <body>
     <header class="nav-container">
         <div class="logo">
-            <a href="">JenWaller.se</a>
+            <a href="">Jenny Waller</a>
         </div>
         <nav class="menu">
             <ul class="navbar">
-                <li><a href="#about" class="">Om</a></li>
-                <li><a href="#knowledge" class="">Kunskaper</a></li>
-                <li><a href="#contact" class="">Kontakt</a></li>
+                <li><a href="#about">Om</a></li>
+                <li><a href="#knowledge">Kunskaper</a></li>
+                <li><a href="#contact">Kontakt</a></li>
             </ul>
         </nav>
     </header>
@@ -51,8 +51,9 @@
                     storytelling. Jag läser nu till Front End Utvecklare via Medieinstitutet!</p>
                 </div>
             <div class="jenny">
+                <!--<a class="jenny-btn" href="#about">Vem är jag?</a>-->
                 <a href="#about" span class="arrow">&darr;</span></a> <!--Byt ut till rad med linked in/mail & github-->
-                <img class="jenny-img" src="img/Jenny-waller_img2.png" width="290" height="434" alt="person med mörkt hår som ler mot kameran" title="jenny_waller">
+                <img class="jenny-img" src="img/Jenny-waller_img2.png" width="250" height="390" alt="person med mörkt hår som ler mot kameran" title="jenny_waller">
             </div>
         </section>
 
@@ -120,13 +121,17 @@
             <div class="contact-grid">
                 <h3 class="grid-title"><span class="text-line">Kontakt</span></h3> <!-- WHY?-->
                 <img class="grid-img" src="img/jenny-waller_connecta.png" width="248" height="413" alt="person med mörkt hår som håller en mobiltelefon" title="Jenny Waller">
+                <p class="grid-text">Låt oss connecta!
+                <span class="arrow">&darr;</span></p>
                 <div class="grid-icons">
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa fa-envelope"></i>
+                    <a aria-label="email symbol" href="mailto:jen@jenwaller.se" target="_blank">
+                        <i class="fa fa-envelope"></i></a>
+                    <a aria-label="LinkedIn symbol" href="https://www.linkedin.com/in/jenny-waller/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i></a>
+                    <a aria-label="GitHub symbol" href="https://github.com/jenmwa" target="_blank">
+                        <i class="fa-brands fa-github"></i>
                 </div>
-                <p class="grid-text">Vill du kontakta mig eller bara connecta och tjöta lite?<br><br> Du når mig bäst via <a href="mailto:hej@jennywaller.se" target="_blank">mail</a> eller <a href="https://www.linkedin.com/in/jenny-waller/" target="_blank">LinkedIn</a>.</p>
-                </div>
+            </div>
         </section>
     </main>
 
@@ -134,7 +139,7 @@
         <p>Copyright &copy;
             <script>document.write(new Date().getFullYear())</script><a href="mailto:jen@jenwaller.se"
                 target="blank"> Jenny Waller</a></p>
-                <p>All rights reserved</p>
+                
         </p>
 </body>
 

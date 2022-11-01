@@ -1,9 +1,12 @@
 
 
 body {
-    background-color: #b8bb99;
-    margin: auto;
-    max-width: 76vw;
+    background-image: url("../img/background_tablet.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: auto;
+        max-width: 75vw;
     
     p {
         font-size: 1.25rem;
@@ -15,11 +18,11 @@ body {
 
 .introduction {
     padding-top: 2rem;
-    background-image: url("../img/background_tablet.jpg");
+    
 
     h1 {
         margin: 0;
-        min-width: 100%;
+        max-width: 50%;
         }
 
     p {
@@ -27,9 +30,7 @@ body {
     padding-left: 1rem;
     }
 
-    img {
-        bottom: 5;
-    }
+  
     
     .arrow {
         font-size: 5rem;
@@ -71,6 +72,7 @@ body {
         display: flex;
         align-items: center;
         gap: 1rem;
+        
     }
 }
 
