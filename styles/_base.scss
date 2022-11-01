@@ -18,6 +18,16 @@ body {
     width: 100%;
     padding: 1rem;
 
+    h2 {
+        font-family: 'PT Serif', serif;
+        text-align: right;
+        margin:0 0 1rem 0;
+        font-size: 3.5rem;
+        text-shadow: 0 1px 1px black;                   
+        position: relative;
+        display: block;
+    }
+
     h3 {
         font-family: 'PT Serif', serif;
         text-align: right;
@@ -67,11 +77,11 @@ body {
     }
 
     .introduction {
-        padding: 2em 2rem 0 2rem;
+        padding: 2em 0 0 1rem;
         border: 1px solid black;
         display: flex;
         flex-direction: column;
-        background-image: url("../img/header_background.jpg");
+        background-image: url("../img/background_base.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -85,7 +95,7 @@ body {
             display: block;
             margin: 0 auto;
             text-shadow: 0 2px 2px black;
-            color: #636458;
+            color: #454545;
         }
 
             .text-line {
@@ -102,12 +112,12 @@ body {
 
         .jenny-text {
             border: 1px solid black;
-            max-width: 50%;
+            max-width: 45%;
             position: relative;
 
             p {
                 font-family: 'Raleway', sans-serif;
-                color: #636458;
+                color: #454545;
                 margin: 1rem 0;
             }
         }
@@ -278,28 +288,32 @@ body {
         }
 
             .grid-item1 {
-                background-image: url(../img/portfolio_gh.jpg);
+                background-image: linear-gradient(to right, rgba(99, 100, 88, 0.75),
+                rgba(99, 100, 88, 0.5)),url(../img/portfolio_gh.jpg);
                 background-position: center;
                 padding: 1rem;
                 height: 10rem;
             }
 
             .grid-item2 {
-                background-image: url(../img/portfolio_gh.jpg);
+                background-image: linear-gradient(to right, rgba(99, 100, 88, 0.75),
+                rgba(99, 100, 88, 0.5)),url(../img/portfolio_gh.jpg);
                 background-position: center;
                 padding: 1rem;
                 height: 10em;
             }
 
             .grid-item3 {
-                background-image: url(../img/portfolio_gh.jpg);
+                background-image: linear-gradient(to right, rgba(99, 100, 88, 0.75),
+                rgba(99, 100, 88, 0.5)),url(../img/portfolio_gh.jpg);
                 background-position: center;
                 padding: 1rem;
                 height: 10em;
             }
 
             .grid-item4 {
-                background-image: url(../img/portfolio_gh.jpg);
+                background-image: linear-gradient(to right, rgba(99, 100, 88, 0.75),
+                rgba(99, 100, 88, 0.5)),url(../img/portfolio_gh.jpg);
                 background-position: center;
                 padding: 1rem;
                 height: 10em;
