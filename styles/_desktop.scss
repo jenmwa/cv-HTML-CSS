@@ -21,12 +21,11 @@ body {
         }
 }
 
-.school {
+.knowledge-container {
     display: flex;
-    justify-content: space-between;
 }
 
-.studies, .knowledge {
+.studies, .developer {
     width: 50%;
     color: #454545;
 }

@@ -48,6 +48,15 @@ body {
         display: block;
     }
 
+    h4 {
+        font-family: $font-secondary;
+        color: $primary-color-dark;
+        margin:0 0 1rem 0;
+        font-size: 2rem;
+        position: relative;
+        display: block;
+    }
+
     a {
         font-family: $font-secondary;
         color: $secondary-color-dark;
@@ -73,9 +82,17 @@ body {
         position: fixed;
         z-index: 4;
 
+        .logo a{
+            font-family: 'Pacifico', cursive;
+            text-decoration: none;
+            font-size: 1.2rem;
+            position: absolute;
+            top: 1.5rem;
+        }
+
         ul li{
             display: inline-block;
-            padding:0.5rem;
+            padding:0.25rem;
         }
 
         ul li a {
@@ -185,18 +202,22 @@ body {
         }
     }
 
-    .school {
+    .knowledge {
         padding: 3rem 1.5rem 2rem 1.5rem;
         border: 10px dashed #ed7564;
         color: $secondary-color-dark;
         margin: 2rem 0; 
        
-
         .text-line {
             display: inline;
-            box-shadow: inset 0 -0.55em 0 $secondary-color-light;        }
+            box-shadow: inset 0 -0.55em 0 $secondary-color-light;
+        }
+
+        h4 {
+            margin-top: 1rem;
+        }
     
-        .knowledge-container {
+        .skills-container {
             margin: 1rem 0;
         }
 
@@ -286,6 +307,7 @@ body {
             justify-content: center;
             align-items: center;
             color: black;
+            text-align: center;
         }
 
             .grid-item1 {
