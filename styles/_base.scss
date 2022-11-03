@@ -362,36 +362,40 @@ body {
 
         .grid-btn {
             grid-area: grid-btn;
-            padding-top: 3rem;
+            padding-bottom: 2rem;
+            display: flex;
+            flex-direction:  column;
 
         }
                 .jenny-btn {
-                    width: 50%;
+                    width: 12rem;
                     background-color: rgb(72, 73, 60);
                     color: $secondary-color-light;
                     font-family: $font-primary;
-                    padding: 1rem 4rem 1rem 2rem;
+                    margin-top: 1rem;
+                    padding: 1rem 0rem 1rem 2rem;
                     border-radius: 5px;
                     z-index: 3;
                     border: 3px solid rgba(245, 245, 245, 0.8);
                     box-shadow: 3px 3px 3px black;                   
-                    text-transform: uppercase;
                     opacity: 1;
                     transition: 0.3s;
                     text-decoration: none;
                     position: relative;
+                }
                   
+                    .jenny-btn:hover {
+                        background-color: #3e3e3a;
+                    }
 
                     .material-symbols-outlined {
                         position: absolute;
                         top: 14px; 
                         padding-left: 1rem;                        
                     
-                }
+                
 
-                .jenny-btn:hover {
-                    background-color: $secondary-color-dark;
-                }
+                
 
                 }
 
