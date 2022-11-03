@@ -52,7 +52,7 @@ body {
         font-family: $font-secondary;
         color: $secondary-color-dark;
         cursor: pointer;
-        text-decoration: none;
+       
         
     }
 
@@ -94,7 +94,6 @@ body {
         display: flex;
         flex-direction: column;
         position: relative;
-        height: 80vh;
 
     
         h1 {
@@ -137,27 +136,6 @@ body {
                     bottom:0;
                     position: absolute;
                 }
-
-                /*.jenny-btn {
-                    background-color: $primary-color-light;
-                    color: $secondary-color-light;
-                    font-family: $font-primary;
-                    font-weight: 900;
-                    text-shadow: 0 1px 1px black;                   
-
-                    padding: 1rem 2rem;
-                    margin: 1rem 0 1rem -1rem;
-                    border-radius: 5px;
-                    z-index: 3;
-                    border: 3px solid rgba(245, 245, 245, 0.8);
-                    box-shadow: 3px 3px 3px black;                   
-                    text-transform: uppercase;
-                    opacity: 1;
-                    transition: 0.3s;
-                }
-                .jenny-btn:hover {
-                    background-color: $secondary-color-dark;
-                }*/
 
                 .arrow {
                     font-family: 'Raleway', sans-serif;
@@ -224,8 +202,7 @@ body {
 
         .text-line {
             display: inline;
-            box-shadow: inset 0 -0.5em 0 rgb(216, 216, 216);
-        }
+            box-shadow: inset 0 -0.55em 0 $secondary-color-light;        }
     
         .knowledge-container {
             margin: 1rem 0;
@@ -287,6 +264,11 @@ body {
     .portfolio {
         background-color: rgba(245, 245, 245, 0.5);
         padding: 4rem 2rem;
+        color: $primarly-color-dark;
+
+        p {
+            padding-top: 2rem;
+        }
 
             .text-line {
                 display: inline;
@@ -352,6 +334,7 @@ body {
         }
 
         .contact-grid {
+            min-height: 75vh;
             position: relative;
             display: grid;
             grid-auto-flow: column;
@@ -372,13 +355,12 @@ body {
         }
 
         .grid-text {
-            margin: 0;
-            padding:0;
+            max-width:95% 
         }
 
         .text-line {
             display: inline;
-            box-shadow: inset 0 -0.5em 0 rgb(103, 106, 81);
+            box-shadow: inset 0 -0.5em 0 rgb(72, 73, 60);
         }
 
         .grid-img {
@@ -390,15 +372,27 @@ body {
 
         .grid-icons {
             grid-area: grid-icons;
-            padding: 3rem 0 3rem 0;
-            font-size: 3.5rem;
-            text-shadow: 0 1px 1px black;  
-               
-                    :hover {
-                        font-size: 3.6rem;
-                         transition: 0.3s;
-                    }
-                
+            padding: 0 0 0 0;
+            margin-bottom: 10rem;
+
+
+                .jenny-btn {
+                    background-color: rgb(72, 73, 60);
+                    color: $secondary-color-light;
+                    font-family: $font-primary;
+                    font-weight: 900;
+                    padding: 1rem 2rem;
+                    border-radius: 5px;
+                    z-index: 3;
+                    border: 3px solid rgba(245, 245, 245, 0.8);
+                    box-shadow: 3px 3px 3px black;                   
+                    text-transform: uppercase;
+                    opacity: 1;
+                    transition: 0.3s;
+                }
+                .jenny-btn:hover {
+                    background-color: $secondary-color-dark;
+                }
         }
 
     }
