@@ -2,19 +2,21 @@
 
 body {
     background-image: url("../img/background_tablet.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        margin: auto;
-        max-width: 75vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: auto;
+    max-width: 75vw;
     
     p {
         font-size: 1.25rem;
         padding-top: 1rem;
-        padding-left: 1rem;
-
     }
 }
+
+.nav-container {
+    padding: 1rem 8rem;
+ }
 
 .introduction {
     padding-top: 2rem;
@@ -29,8 +31,6 @@ body {
     padding-top: 1rem;
     padding-left: 1rem;
     }
-
-  
     
     .arrow {
         font-size: 5rem;
@@ -50,7 +50,6 @@ body {
     p {
     font-size: 1.25rem;
     padding-top: 1rem;
-
     }
 
     .knowledge, .studies {
@@ -67,17 +66,10 @@ body {
     }
 }
 
-.contact {
-    .grid-icons { /*fixa row med grid!*/
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        
-    }
+.contact-grid {
+    min-height: 80vh;
 }
 
-footer {
-    a{
-        color:#efdcd8;
-    }
+footer .footer-icons {
+    font-size: 1.25rem;
 }

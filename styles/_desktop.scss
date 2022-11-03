@@ -6,13 +6,22 @@ body {
     margin: auto;
     max-width: 75vw;
 }
+ 
+.nav-container {
+   padding: 1rem 12rem;
+}
 
 .introduction {
+    padding-top: 4rem;
 
-    background-image: none;
+    h1 {
+        margin: 0;
+        max-width: 50%;
+        font-size: 8rem;
+        }
 }
-.school {
 
+.school {
     display: flex;
     justify-content: space-between;
 }
@@ -31,11 +40,20 @@ body {
 
     .grid-container {
         grid-template-columns: repeat(4, 1fr);
+
+        .grid.img {
+            width: 450px;
+        }
     
         .grid-item1, .grid-item2, .grid-item3, .grid-item4{
-            display: grid;
+        display: grid;
         justify-content: center;
         align-items: center;
     }
         }
+}
+
+.contact-grid {
+    min-height: 100vh;
+
 }

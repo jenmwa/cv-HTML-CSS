@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <meta name="description" content="Utbildad mediavetare och blivande Front End Developer bosatt i Karlstad som söker LIA hösten 2023." >
     <meta name="robots" content="all" />
+    <meta name="theme-color" content="#636458">
 
     <title>Jenny Waller - blivande Front End Utvecklare | Karlstad</title>
     <meta property="og:title" content="Jenny Waller | Blivande Front End Developer" >
@@ -19,19 +20,15 @@
 
     <script src="https://kit.fontawesome.com/5f72eb8ffe.js" crossorigin="anonymous"></script>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" >
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" >
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" >
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Raleway:wght@100;400;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Pacifico&family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="nav-container">
         <div class="logo">
-            <a href="">Jenny Waller</a>
+            <a href="https://www.jenwaller.se/portfolio">Jenny Waller</a>
         </div>
         <nav class="menu">
             <ul class="navbar">
@@ -52,8 +49,11 @@
                 </div>
             <div class="jenny">
                 <!--<a class="jenny-btn" href="#about">Vem är jag?</a>-->
-                <a href="#about" span class="arrow">&darr;</span></a> <!--Byt ut till rad med linked in/mail & github-->
-                <img class="jenny-img" src="img/Jenny-waller_img2.png" width="250" height="390" alt="person med mörkt hår som ler mot kameran" title="jenny_waller">
+                <!--<a href="#about" span class="arrow">&darr;</span></a> Byt ut till rad med linked in/mail & github-->
+                <img class="jenny-img" srcset="img/jenny_waller_base.png 250w, img/jenny_waller_tablet.png 375w, img/jenny_waller_desktop.png 500w"
+                sizes="(max-width:767px) 250px, (max-width:1365px) 375px, 500px"
+                src="jenny_waller_desktop.png"
+                alt="person med mörkt hår som ler mot kameran" title="jenny_waller">
             </div>
         </section>
 
@@ -64,7 +64,7 @@
             <p>Jag gillar struktur, ordning och reda, samtidigt som färg, form, design & bildhantering ligger mig varmt om hjärtat.</p>
             <p>Vill du veta mer? Hör av dig!<br>Jag finns på både <a href="https://www.linkedin.com/in/jenny-waller/" target="_blank">LinkedIn</a> samt via <a href="mailto:hej@jenwaller.se" target="_blank">mail</a>, skriv ett hej så kan vi fortsätta därifrån!</p>
             <p>Allt gott,</p>
-            <img class="jenny-name" src="img/jenny_sign.png" width="200" height="100" alt="namnet Jenny skrivet för hand" title="jenny_waller_namn"><!--use @font-face?-->
+            <p class="jenny-sign">Jenny</p>
         </section>
 
         <section class="school" id="knowledge">
@@ -108,6 +108,8 @@
         <section class="portfolio" id="experience">
             <div class="portfolio-heading">
                  <h3 class="text-line">Portfolio</h3>
+                 <a aria-label="GitHub symbol" href="https://github.com/jenmwa" target="_blank">
+                    <i class="fa-brands fa-github"></i></a>
                 <div class="grid-container">
                     <div class="grid-item1">Project 1</div>
                     <div class="grid-item2">Project 2</div>
@@ -120,27 +122,38 @@
         <section class="contact" id="contact">
             <div class="contact-grid">
                 <h3 class="grid-title"><span class="text-line">Kontakt</span></h3> <!-- WHY?-->
-                <img class="grid-img" src="img/jenny-waller_connecta.png" width="248" height="413" alt="person med mörkt hår som håller en mobiltelefon" title="Jenny Waller">
-                <p class="grid-text">Låt oss connecta!
-                <span class="arrow">&darr;</span></p>
+                <img class="grid-img" srcset="img/jenny_waller_connect_base.png 250w, img/jenny_waller_connect_tablet.png 350w, img/jenny_waller_connect_desktop.png 450w"
+                sizes="(max-width:767px) 250px, (max-width:1365px) 350px, 450px"
+                src="jenny_waller_connect_desktop.png"
+                alt="person med mörkt hår som håller en mobiltelefon" title="Jenny Waller">
+                <p class="grid-text">Låt oss connecta!<br><br>
+                Jag finns i Karlstad men lite överallt online!
+                     Nås allra bäst via mail på jen@jenwaller.se, näst bäst via LinkedIn men jag finns även på både Instagram och Facebook.</p>
+                  
                 <div class="grid-icons">
                     <a aria-label="email symbol" href="mailto:jen@jenwaller.se" target="_blank">
                         <i class="fa fa-envelope"></i></a>
-                    <a aria-label="LinkedIn symbol" href="https://www.linkedin.com/in/jenny-waller/" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i></a>
-                    <a aria-label="GitHub symbol" href="https://github.com/jenmwa" target="_blank">
-                        <i class="fa-brands fa-github"></i>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>Copyright &copy;
-            <script>document.write(new Date().getFullYear())</script><a href="mailto:jen@jenwaller.se"
-                target="blank"> Jenny Waller</a></p>
+        <div>
+            <p>Copyright &copy; 2022
+                <a href="mailto:jen@jenwaller.se" target="blank"> Jenny Waller</a>
+            </p>
+        </div>
+        <div class="footer-icons">
+                    <a aria-label="email symbol" href="mailto:jen@jenwaller.se" target="_blank">
+                        <i class="fa fa-envelope"></i></a>
+                    <a aria-label="LinkedIn symbol" href="https://www.linkedin.com/in/jenny-waller/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i></a>
+                    <a aria-label="GitHub symbol" href="https://github.com/jenmwa" target="_blank">
+                        <i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
                 
-        </p>
 </body>
 
 </html>
