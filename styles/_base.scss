@@ -69,7 +69,7 @@ body {
         color: $secondary-color-dark;
         display: flex;
         justify-content: space-between;
-        padding: 0.5rem 2rem;
+        padding: 1rem 2rem;
         position: fixed;
         z-index: 4;
 
@@ -366,11 +366,11 @@ body {
 
         }
                 .jenny-btn {
+                    width: 50%;
                     background-color: rgb(72, 73, 60);
                     color: $secondary-color-light;
                     font-family: $font-primary;
-                    font-weight: 900;
-                    padding: 1rem 2rem;
+                    padding: 1rem 4rem 1rem 2rem;
                     border-radius: 5px;
                     z-index: 3;
                     border: 3px solid rgba(245, 245, 245, 0.8);
@@ -378,11 +378,25 @@ body {
                     text-transform: uppercase;
                     opacity: 1;
                     transition: 0.3s;
+                    text-decoration: none;
+                    position: relative;
+                  
+
+                    .material-symbols-outlined {
+                        position: absolute;
+                        top: 14px; 
+                        padding-left: 1rem;                        
+                    
                 }
 
                 .jenny-btn:hover {
                     background-color: $secondary-color-dark;
                 }
+
+                }
+
+            
+                
         
     }
 
