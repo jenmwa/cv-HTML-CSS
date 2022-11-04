@@ -15,6 +15,9 @@ $primary-color-accent: #ed7564;
     padding: 0;
     margin: 0;
     box-sizing: border-box;   
+    scroll-behavior: smooth;
+                    transition: 0.3s;
+
 }
 
 
@@ -87,7 +90,7 @@ body {
             text-decoration: none;
             font-size: 1.2rem;
             position: absolute;
-            top: 1.5rem;
+            top: 1.2rem;
         }
 
         ul li{
@@ -131,11 +134,32 @@ body {
 
         .jenny-text {
             max-width: 45%;
-            margin: 1rem 0 4rem 0;
+            margin: 1rem 0 2rem 0;
+            padding-bottom: 2rem;
+            position: relative;
 
             p {
                 color: #454545;
                 margin: 1rem 0;
+            }
+
+            .jenny-link {
+                color: $primary-color-light;
+                font-family: $font-primary;
+                background-color: rgb(72, 73, 60);
+                padding: 1rem 1.75rem;
+                border-radius: 5px;
+                z-index: 3;
+                border: 3px solid rgba(245, 245, 245, 0.8);
+                box-shadow: 3px 3px 3px black;                   
+                opacity: 1;
+                text-decoration: none;
+                position: absolute;
+                margin-right: -1rem;
+            }
+
+            .jenny-link:hover {
+                background-color: #3e3e3a;
             }
         }
 
@@ -149,22 +173,12 @@ body {
                     bottom:0;
                     position: absolute;
                 }
-
-                .arrow {
-                    font-family: 'Raleway', sans-serif;
-                    text-decoration: none;
-                    font-size: 9rem;
-                    font-weight: 900;
-                    z-index: 2;
-                    bottom: 1.5rem;
-                    transition: all .1s ease-in-out; 
-                }
         }
     }
             
     .about {
         position: relative;
-        padding: 3rem 2rem 2rem 2rem;
+        padding: 3rem 2rem 2rem 1rem;
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.15),
         rgba(0, 0, 0, 0.15));
         background-color: $secondary-color-dark;
@@ -207,6 +221,8 @@ body {
         border: 10px dashed #ed7564;
         color: $secondary-color-dark;
         margin: 2rem 0; 
+        background-color: rgba(245, 245, 245, 0.75);
+
        
         .text-line {
             display: inline;
@@ -287,13 +303,19 @@ body {
                 display: inline;
                 box-shadow: inset 0 -0.55em 0 $secondary-color-light;
             }
+
         img {
             filter: invert(37%) sepia(6%) saturate(818%) hue-rotate(26deg) brightness(96%) contrast(81%);
             margin-left: 1rem;
             position: absolute;
             top: 4.5rem;
         }
-
+        .symbol-github:hover {
+            filter: invert(57%) sepia(9%) saturate(3337%) hue-rotate(319deg) brightness(100%) contrast(87%);                margin-left: 1rem;
+            position: absolute;
+            top: 4.5rem;
+        }
+        
         .grid-container {
 
             max-width: 100%;
@@ -368,7 +390,7 @@ body {
             grid-template-areas:
             "grid-title grid-title"
             "grid-text grid-img"
-            "grid-btn grid-img";
+            "grid-links grid-img";
         }
 
         .grid-title {
@@ -392,19 +414,18 @@ body {
             bottom: 0;
         }
 
-        .grid-btn {
-            grid-area: grid-btn;
-            padding-bottom: 2rem;
+        .grid-links {
+            grid-area: grid-links;
             display: flex;
             flex-direction:  column;
 
         }
-                .jenny-btn {
+                .jenny-link {
                     width: 10rem;
                     background-color: rgb(72, 73, 60);
                     color: $secondary-color-light;
                     font-family: $font-primary;
-                    margin-top: 1rem;
+                    margin: 0.75rem 0;
                     padding: 1rem 0rem 1rem 2rem;
                     border-radius: 5px;
                     z-index: 3;
@@ -416,19 +437,19 @@ body {
                     position: relative;
                 }
                   
-                    .jenny-btn:hover {
+                    .jenny-link:hover {
                         background-color: #3e3e3a;
                     }
 
                     .material-symbols-outlined {
                         position: absolute;
                         top: 14px; 
-                        right: 1rem;                       
+                        right: 16px;                       
                     }
                     .symbol-linkedin {
                         position: absolute;
                         bottom: 16px; 
-                        right: 1rem;                        
+                        right: 16px;                        
                         filter: invert(100%) sepia(0%) saturate(7491%) hue-rotate(196deg) brightness(92%) contrast(93%);
                         }
 
