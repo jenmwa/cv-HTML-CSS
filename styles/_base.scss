@@ -16,10 +16,8 @@ $primary-color-accent: #ed7564;
     margin: 0;
     box-sizing: border-box;   
     scroll-behavior: smooth;
-                    transition: 0.3s;
-
+    transition: 0.3s;
 }
-
 
 body {
     background-color: $primary-color-light;
@@ -437,25 +435,23 @@ body {
                     position: relative;
                 }
                   
-                    .jenny-link:hover {
-                        background-color: #3e3e3a;
-                    }
+                .jenny-link:hover {
+                    background-color: #3e3e3a;
+                }
 
-                    .material-symbols-outlined {
-                        position: absolute;
-                        top: 14px; 
-                        right: 16px;                       
-                    }
-                    .symbol-linkedin {
-                        position: absolute;
-                        bottom: 16px; 
-                        right: 16px;                        
-                        filter: invert(100%) sepia(0%) saturate(7491%) hue-rotate(196deg) brightness(92%) contrast(93%);
-                        }
+                .material-symbols-outlined {
+                    position: absolute;
+                    top: 14px; 
+                    right: 16px;                       
+                 }
 
-            
-                
-        
+                .symbol-linkedin {
+                    position: absolute;
+                    bottom: 16px; 
+                    right: 16px;                        
+                    filter: invert(100%) sepia(0%) saturate(7491%) hue-rotate(196deg) brightness(92%) contrast(93%);
+                }
+
     }
 
     footer {
